@@ -8,7 +8,7 @@ scalaVersion := "2.12.12"
 lazy val root = (project in file("."))
   .settings(
     libraryDependencies ++= Seq(
-      munit, shapeless, refined
+      munit, shapeless, refined, simulacrum
     )
   )
 
@@ -60,3 +60,5 @@ scalacOptions ++= Seq(
 )
 
 addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.4.0")
+addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full)
+

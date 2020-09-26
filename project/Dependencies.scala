@@ -16,5 +16,6 @@ object Dependencies {
   val cats_effect       = "org.typelevel" % s"cats-effect_$scalaBinVersion" % cats_version
   val shapeless         = "com.chuusai" %% "shapeless" % "2.3.3"
   val refined           = "eu.timepit" %% "refined" % "0.9.16"
+  val simulacrum        = "org.typelevel" %% "simulacrum" % "1.0.0"
 
 }
