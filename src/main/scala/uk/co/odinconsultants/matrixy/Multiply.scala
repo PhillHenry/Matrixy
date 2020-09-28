@@ -1,8 +1,8 @@
 package uk.co.odinconsultants.matrixy
 
 import simulacrum.{op, typeclass}
-import uk.co.odinconsultants.matrixy.Matrix.ExactInt
+import uk.co.odinconsultants.matrixy.Matrix.Length
 
-@typeclass trait Multiply[M[_ <: ExactInt, _ <: ExactInt]] {
-  @op("x") def multiply[A <: ExactInt, B <: ExactInt, C <: ExactInt](x: M[A, B])(y: M[B, C]): M[A, C]
+@typeclass trait Multiply[M[_ <: Length, _ <: Length]] {
+  @op("x") def multiply[A <: Length, B <: Length, C <: Length](x: M[A, B])(y: M[B, C]): M[A, C]
 }
