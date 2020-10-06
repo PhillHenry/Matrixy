@@ -14,6 +14,8 @@ lazy val root = (project in file("."))
 
 testFrameworks += new TestFramework("munit.Framework")
 
+organization in ThisBuild := "uk.co.odinconsultants"
+
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
 
 // see https://nathankleyn.com/2019/05/13/recommended-scalac-flags-for-2-13/
@@ -62,3 +64,5 @@ scalacOptions ++= Seq(
 addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.4.0")
 addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full)
 
+// see https://github.com/xerial/sbt-sonatype
+publishTo := sonatypePublishToBundle.value
