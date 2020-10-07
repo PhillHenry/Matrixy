@@ -7,11 +7,11 @@ class InvertTest  extends munit.FunSuite {
   import TestObjects._
   import Invert.ops._
 
-  test ("multiply compatible matrices") {
+  test ("invert square matrix") {
     _7x7.inv
   }
 
-  test("incompatible multiplication does not compile") {
+  test("cannot invert non-square matrix") {
     assertNoDiff(
       compileErrors("_3x7.inv"),
       """|error: Cannot prove that uk.co.odinconsultants.matrixy.TestObjects._3 =:= uk.co.odinconsultants.matrixy.TestObjects._7.
