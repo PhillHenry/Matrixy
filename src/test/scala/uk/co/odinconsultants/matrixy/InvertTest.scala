@@ -14,7 +14,7 @@ class InvertTest  extends munit.FunSuite {
   test("incompatible multiplication does not compile") {
     assertNoDiff(
       compileErrors("_3x7.inv"),
-      """|error: Cannot prove that uk.co.odinconsultants.matrixy.TestObjects._3 <:< uk.co.odinconsultants.matrixy.TestObjects._7.
+      """|error: Cannot prove that uk.co.odinconsultants.matrixy.TestObjects._3 =:= uk.co.odinconsultants.matrixy.TestObjects._7.
          |_3x7.inv
          |     ^
          |""".stripMargin

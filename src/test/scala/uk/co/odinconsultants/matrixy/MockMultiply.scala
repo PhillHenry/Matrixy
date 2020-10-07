@@ -10,6 +10,6 @@ class MockMultiply extends Multiply[MockMatrix] {
 }
 
 class MockInvert extends Invert[MockMatrix] {
-  override def invert[A <: Length, B <: Length](x: MockMatrix[A, B])(implicit a: A <:< B): MockMatrix[A, A] =
+  override def invert[A <: Length, B <: Length](x: MockMatrix[A, B])(implicit a: A =:= B): MockMatrix[A, A] =
     new MockMatrix[A, A](x.nRows, x.nRows)
 }
