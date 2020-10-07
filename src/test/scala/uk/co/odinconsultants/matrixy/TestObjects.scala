@@ -12,5 +12,6 @@ object TestObjects {
   type _8 = Exactly[W.`8`.T]
   val _3x7: MockMatrix[_3, _7]   = MockMatrix(3: _3, 7: _7)
   val _7x8: MockMatrix[_7, _8]   = MockMatrix(7: _7, 8: _8)
+  val _7x7: MockMatrix[_7, _7]   = MockMatrix(7: _7, 7: _7)
   val _8x7: MockMatrix[_8, _7]   = MockMatrix(8: _8, 7: _7)
 }
