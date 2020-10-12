@@ -1,6 +1,7 @@
-package uk.co.odinconsultants.matrixy
+package uk.co.odinconsultants.matrixy.mocks
 
 import uk.co.odinconsultants.matrixy.Matrix.{Length, ZeroToA}
+import uk.co.odinconsultants.matrixy.{DoubleElements, Invert, Multiply}
 
 case class MockMatrix[ROWS <: Length, COLS  <: Length](nRows: ROWS, nCols: COLS)
 

@@ -1,4 +1,4 @@
-package uk.co.odinconsultants.matrixy
+package uk.co.odinconsultants.matrixy.mocks
 
 import eu.timepit.refined.W
 import eu.timepit.refined.api.Refined

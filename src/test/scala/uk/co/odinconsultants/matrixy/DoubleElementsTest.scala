@@ -1,5 +1,7 @@
 package uk.co.odinconsultants.matrixy
 
+import uk.co.odinconsultants.matrixy.mocks.MockDoubleElements
+
 class DoubleElementsTest extends munit.FunSuite {
 
   implicit val doubles = new MockDoubleElements
