@@ -1,6 +1,6 @@
 package uk.co.odinconsultants.matrixy
 
-class InvertTest  extends munit.FunSuite {
+class InvertTest extends munit.FunSuite {
 
   implicit val inversion = new MockInvert
 
